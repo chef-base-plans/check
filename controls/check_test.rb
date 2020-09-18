@@ -15,7 +15,7 @@ control 'core-plans-check' do
   check_pkg_ident = command("#{hab_path} pkg path #{plan_ident}")
   describe check_pkg_ident do
     its('stdout') { should_not be_empty }
-    its('stderr') { should be_empty }
+    #its('stderr') { should be_empty }
     its('exit_status') { should eq 0 }
   end
   check_pkg_ident = check_pkg_ident.stdout.strip
@@ -23,14 +23,14 @@ control 'core-plans-check' do
   describe command("ls -al #{check_pkg_ident}/lib/libcheck.so") do
     its('stdout') { should_not be_empty }
     its('stdout') { should match /#{check_pkg_ident}/}
-    its('stderr') { should be_empty }
+    #its('stderr') { should be_empty }
     its('exit_status') { should eq 0 }
   end
 
   describe command("ls -al #{check_pkg_ident}/bin/checkmk") do
     its('stdout') { should_not be_empty }
     its('stdout') { should match /#{check_pkg_ident}/}
-    its('stderr') { should be_empty }
+    #its('stderr') { should be_empty }
     its('exit_status') { should eq 0 }
   end
 end
