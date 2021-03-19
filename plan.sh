@@ -11,7 +11,7 @@ cause segmentation faults or other signals can be caught.\
 pkg_upstream_url="https://libcheck.github.io/check"
 pkg_license=('LGPL-2.1-or-later')
 pkg_source="https://github.com/libcheck/check/releases/download/${pkg_version}/check-${pkg_version}.tar.gz"
-pkg_shasum="79da45e0c985803dac9784f0e6877a0ec5f4179a3bb8bb1d79a7851d76358c07"
+pkg_shasum="a8de4e0bacfb4d76dd1c618ded263523b53b85d92a146d8835eb1a52932fa20a"
 pkg_deps=(
   core/gawk
   core/glibc
