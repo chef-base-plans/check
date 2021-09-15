@@ -1,6 +1,6 @@
 pkg_name=check
 pkg_origin=core
-pkg_version=0.12.0
+pkg_version=0.15.2
 pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_description="\
 Check is a unit testing framework for C. It features a simple interface for \
@@ -11,7 +11,7 @@ cause segmentation faults or other signals can be caught.\
 pkg_upstream_url="https://libcheck.github.io/check"
 pkg_license=('LGPL-2.1-or-later')
 pkg_source="https://github.com/libcheck/check/releases/download/${pkg_version}/check-${pkg_version}.tar.gz"
-pkg_shasum="464201098bee00e90f5c4bdfa94a5d3ead8d641f9025b560a27755a83b824234"
+pkg_shasum="a8de4e0bacfb4d76dd1c618ded263523b53b85d92a146d8835eb1a52932fa20a"
 pkg_deps=(
   core/gawk
   core/glibc
